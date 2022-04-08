@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KitchenStory</title>
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     </head>
+    <body>
+    
+        <!-- Navigation Starting .. -->
+        <header class ="header">
+         
+            <a href="#"><img src="CSS/images/logo1.jpg" alt="logo" class="logo" ></a>
+    
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html" class="active" >CustomerHome</a></li>
+                    <li><a href="adminlogin.html" target="_blank" >Admin Login</a></li>
+                    <li><a href="orderhistory.html" target="_blank" >Order History</a></li>
+                    <li><a href="adminlogin.html" target="_blank" >LogOut</a></li>
+    
+    
+                </ul>
+            </div> 
+   
+        </header>
+
+        <h4 class="prdcts"> Admin <b>Home</b></h4>
+
+        <div class="admin-products-crud">
+            <input type="button" value="Add Item" id='crud-add-btn'/>
+            <input type="button" value="Update Item" id='crud-update-btn'/>
+            <input type="button" value="Search Item" id='crud-search-btn'/>
+            <input type="button" value="Delete Item" id='crud-delete-btn'/>
+
+        </div><br>
+
+        <div class="add-products">
+            <h4>Add Prooduct</h4>
+           
+            
+                Product Name:<input type="text" name="adminProductName" id="adminProductName" ><br>
+                Quantity: <input type="text" name="Adminquantity" id="Adminquantity" ><br>
+                price: <input type="text" name="price" id="price" ><br>
+                <input type="submit" value="Add Item" id='product-add-btn' >
+
+
+        </div>
+
+        <div class="update-products">
+            <h4>Update Prooduct</h4>
+           
+            Product Name:<input type="text" name="adminProductName" id="" ><br>
+            Quantity: <input type="text" name="Adminquantity" id="" ><br>
+            price: <input type="text" name="price" id="" ><br>
+            <input type="submit" value="Update Item" id='product-update-btn' >
+
+        </div>
+
+
+        <div class="search-products">
+            <h4>Search Prooduct</h4>
+           
+            Product Name:<input type="text" name="Adminquantity" id="" ><br>
+            <input type="submit" value="Search Item" id='product-search-btn' >
+
+        </div>
+
+        <div class="delete-products">
+            <h4>Delete Prooduct</h4>
+           
+            Product Name:<input type="text" name="Adminquantity" id="" ><br>
+
+            <input type="submit" value="Delete Item" id='product-delete-btn' >
+
+        </div>
+
+
+        <h4 class="prdcts"> Product <b> Categories</b></h4>
+
+        <div class="admin-container">
+            <table>
+
+                <tr>
+                    <th>Product </th>
+                    <th>Quantity </th> 
+                    <th>Price/Qty </th> 
+                    
+                </tr>
+                <tr class="admin-add-products">
+
+
+                </tr>
+            </table>
+
+        </div>
+        <script src="admin.js"></script>
+</body>
+</html>
